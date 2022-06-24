@@ -1,0 +1,226 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: #082640;
+    text-align: center;
+    align-content: center;
+    
+}
+
+header, p {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #EBF2F2;
+    padding-top: 10px;
+}
+
+h1 {
+    padding-top: 100px;
+    font-size: 5em;
+    font-style: italic;
+    text-shadow: 4px 4px 4px #168C8C;
+    color: #06DFC4;
+}
+
+h2 {
+
+    font-size: 5em;
+    font-style: italic;
+    text-shadow: 4px 4px 4px #168C8C;
+    color: #06DFC4;
+}
+
+
+body {
+    width: 100%;
+    height:auto;
+    background-color: #082640;
+}
+
+#buttons {
+    padding-top: 20px;
+}
+
+#startbutton {
+
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#startbtn {
+    background-color:#022840;
+    width: 203px;
+    height: 50px;
+    font-size: 2em;
+    color: #EBF2F2;
+    border: solid 3px #EBF2F2;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+}
+
+#nameinput {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#userinput {
+    background-color:#022840;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    color: #EBF2F2;
+    text-align: center;
+    border: solid 3px #EBF2F2;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    
+
+}
+
+#changetheme{
+    background-color:#022840;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    color: #EBF2F2;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+#scorecontainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+#avatar {
+    text-align: center;
+}
+
+
+#scoreend {
+    text-align: center;
+    font-size: 1.5em;
+    color: #EBF2F2;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.scoremessage {
+    padding-bottom: 10px;
+}
+
+
+#planetdraggables {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    -ms-touch-action: none;
+    touch-action: none;
+    
+}
+
+#dropzones {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    -ms-touch-action: none;
+    touch-action: none;
+
+}
+
+#scorecontainer {
+display: flex;
+text-align: center;
+font-size: 1.7em;
+color: #EBF2F2;
+margin-left: 20px;
+margin-right: 60px;
+
+}
+
+#nextlvlbutton {
+
+    background-color:#022840;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    color: #EBF2F2;
+    border: solid 3px #EBF2F2;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    
+    
+
+}
+
+#restartbutton {
+    background-color:#022840;
+    width: 200px;
+    height: 50px;
+    font-size: 1.3em;
+    color: #EBF2F2;
+    border: solid 3px #EBF2F2;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+#formbutton {
+    background-color:#022840;
+    width: 200px;
+    height: 50px;
+    font-size: 1.3em;
+    color: #EBF2F2;
+    border: solid 3px #EBF2F2;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+
+
+}
+#timer {
+    color: #F21D1D;
+    position: fixed;
+    padding-left: 10px;
+    
+}
+
+.score {
+    color: #FFC030;
+}
+
+#border {
+
+    width: 1000px;
+    padding-bottom: 30px;
+    border: solid #EBF2F2 2px;
+    border-radius: 25px;
+}
+
+
+

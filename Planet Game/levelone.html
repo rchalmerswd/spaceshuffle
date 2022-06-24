@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touch/1.1.0/jquery.touch.min.js" integrity="sha512-aIllT5ONVk5YjYosfycKuUdZwGll1U9LRgBvNNagocaLMmwVPJ0cmydLEjNN6LQvDGa8eDe7sW4Ug138240UyQ==" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
+    <title>Solar System Shuffle</title>
+</head>
+
+<header>
+        
+    <h1>SPACE SHUFFLE</h1>
+    <p>Match The Pictures Before The Timer Runs Out!</p>
+
+</header>
+
+<body>
+
+  <!--Audio Section-->
+<audio id="levelcompleteaudio">
+  <source src="audio/levelcomplete.wav" type="audio/wav">
+</audio>
+<audio id="outoftimeaudio">
+  <source src="audio/outoftime.wav" type="audio/wav">
+</audio>
+<audio id="swooshaudio">
+  <source src="audio/swoosh.wav" type="audio/wav">
+</audio>  <!--End Audio Section-->
+
+  <!--Buttons-->
+  <div id = "buttons">
+
+  <!--Name Input-->
+  <div id ="nameinput">
+
+  <input type="text" name="username" id="userinput" placeholder="Enter Your Name">
+    
+</div> <!--End Name Input-->
+  
+<!--Start Button-->
+  <div id ="startbutton">
+  <button id ="startbtn">Start Game</button>
+  </div>
+
+    <div class="changetheme" id="changetheme">
+
+      <form action="#">
+        <label for="colours">Change Logo Colour:</label>
+        <select name="colours" id="colours">
+          <option value=""></option>
+          <option value="Purple">Purple</option>
+          <option value="Blue">Blue</option>
+          <option value="Teal">Teal</option>
+        </select>
+
+      </form>
+
+</div> <!--End Buttons-->
+
+<!--Scorecontainer (Score,Welcome,Timer)-->
+<div id ="scorecontainer">
+  <p id="gamescore">Score:<span class="score">0</span></p>
+  <p class="welcome"></p>
+  <p id="timertext">Timer<span id="timer">&nbsp;60</span></p></div>
+
+</div><!--End Scorecontainer-->
+
+<!--Avatar/User Icon-->
+<div id ="avatar">
+<span id="img"></span>
+<div id ="forloop"></div>
+</div> <!--End Avatar-->
+
+<!--Scoreend / End Round Message-->
+<div id ="scoreend">
+<p class="scoremessage"></p>
+<a href="leveltwo.html"><button type="button" id="nextlvlbutton">Level 2</button></a>
+<a href="levelone.html"><button type="button" id="restartbutton">Try Again?</button></a>
+</div> <!--End Scoreend-->
+
+<br>
+
+<!--Containment Border-->
+<div id="border">
+
+<!--Planet Draggables-->
+<div id="planetdraggables">
+  
+<div class="draggable planet1" id="planet1"> <img src="images/neptune.png" alt="neptuneimg"></div>
+<div class="draggable planet2" id="planet2"> <img src="images/jupiter.png" alt="jupiterimg"></div>
+<div class="draggable planet3" id="planet3"> <img src="images/saturn.png" alt="saturnimg"></div>
+</div> <!--End Planet Draggables-->
+
+<!--Dropzones-->
+<div id="dropzones">
+<div class="dropzone1 planet1" id="zone1" data-value="planet1"> <img src="images/neptune.png" alt="neptuneimg"></div>
+<div class="dropzone2 planet2" id="zone2" data-value="planet2"> <img src="images/jupiter.png" alt="jupiterimg"></div>
+<div class="dropzone3 planet3" id="zone3" data-value="planet3"> <img src="images/saturn.png" alt="saturnimg"></div>
+
+</div> <!--End Dropzones-->
+
+</div> <!--End Containment Border-->
+
+
+  <!-- Links To Jquery Files -->
+<script src="jquery/jquery-3.5.1.min.js"></script>
+<script src="jquery/jquery-ui.js"></script>
+<script src="js/levelone.js"></script>
+
+
+</body>
+
+</html>

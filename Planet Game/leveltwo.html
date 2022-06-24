@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
+    <title>Solar System Shuffle</title>
+</head>
+
+<header>
+
+  <p>Match The Pictures Before The Timer Runs Out!</p>
+
+</header>
+
+<body>  
+
+  <!--Audio Section-->
+<audio id="levelcompleteaudio">
+  <source src="audio/levelcomplete.wav" type="audio/wav">
+</audio>
+<audio id="outoftimeaudio">
+  <source src="audio/outoftime.wav" type="audio/wav">
+</audio>
+<audio id="swooshaudio">
+  <source src="audio/swoosh.wav" type="audio/wav">
+</audio>  <!--End Audio Section-->
+
+<!--Scorecontainer (Score,Welcome,Timer)-->
+<div id ="scorecontainer">
+  <p id="gamescore">Score:<span class="score">3</span></p>
+  <p class="welcome"></p>
+  <p id="timertext">Timer<span id="timer">&nbsp;60</span></p>
+
+</div> <!--End Score Container-->
+
+<!--Avatar/User Icon-->
+<div id ="avatar">
+<span id="img"></span>
+</div> <!--End Avatar-->
+
+<!--Scoreend / End Round Message-->
+<div id ="scoreend">
+<p class="scoremessage"></p>
+<a href="levelthree.html"><button type="button" id="nextlvlbutton">Level 3</button></a>
+<a href="leveltwo.html"><button type="button" id="restartbutton">Try Again?</button></a>
+
+</div> <!--End Scoreend-->
+
+<!--Containment Border-->
+<div id="border">
+
+<!--Planet Draggables-->
+<div id="planetdraggables">
+  
+<div class="draggable planet1" id="planet3"> <img src="images/astronomy.png" alt="astronomyimg"></div>
+<div class="draggable planet2" id="planet1"> <img src="images/moon-phases.png" alt="moonimg"></div>
+<div class="draggable planet3" id="planet2"> <img src="images/comet.png" alt="cometimg"></div>
+</div> <!--End Planet Draggables-->
+
+<!--Dropzones-->
+<div id="dropzones">
+<div class="dropzone1 planet1" id="zone1" data-value="planet1"> <img src="images/moon-phases.png" alt="moonimg"></div>
+<div class="dropzone2 planet2" id="zone2" data-value="planet2"> <img src="images/comet.png" alt="cometimg"></div>
+<div class="dropzone3 planet3" id="zone3" data-value="planet3"> <img src="images/astronomy.png" alt="astronomyimg"></div>
+
+</div> <!--End Dropzones-->
+
+</div> <!--End Containment Border-->
+
+
+
+   <!-- Links To Jquery Files -->
+<script src="jquery/jquery-3.5.1.min.js"></script>
+<script src="jquery/jquery-ui.js"></script>
+<script src="js/leveltwo.js"></script>
+
+
+</body>
+
+
+
+
+
+</html>
